@@ -175,7 +175,7 @@ if user_input:
             # 체인을 생성
             prompt = PromptTemplate.from_template(option)
 
-            model = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, api_key=api_key)
+            model = ChatOpenAI(model="gpt-4o", temperature=0, api_key=api_key)
 
             chain = prompt | model | StrOutputParser()
 
