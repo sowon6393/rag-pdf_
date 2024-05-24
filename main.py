@@ -16,8 +16,8 @@ import os
 
 # OPENAI API KEY 를 설정합니다.
 st.title("S⚬W⚬N⚬B⚬T 👽")
-st.subheader("물어보면 대답해줌 근데 많이 쓰면 쪼끔 곤란함 💰")
-st.subheader("PDF 파일 업로드 시 PDF 내용을 기준으로 답변합니다.")
+st.subheader("물어봐 근데 많이 물어보면 쪼끔 곤란함 💰")
+st.markdown(":green-background[ PDF 파일 업로드 시 PDF 내용을 기준으로 답변합니다. ]")
 st.markdown(':blue-background[ 홍도비 바보 🤪🤸]')
 
 retrieval_chain = None
