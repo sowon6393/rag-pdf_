@@ -15,7 +15,7 @@ from langchain.document_loaders import PyPDFLoader
 import os
 
 # OPENAI API KEY 를 설정합니다.
-st.title("S🟢W⚬NoBoT 👽")
+st.title("S⚬W⚬N⚬B⚬T 👽")
 st.subheader("PDF 파일을 기준으로 무엇이든 물어보세요!")
 st.markdown(':blue-background[ 홍도비 바보 🤪🤸]')
 
