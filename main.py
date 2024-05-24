@@ -1,5 +1,3 @@
-## 배포
-
 import streamlit as st
 from langchain_core.messages import ChatMessage
 from langchain_openai import ChatOpenAI
@@ -36,14 +34,25 @@ retrieval_chain = None
 # """,
 # ]
 
+import streamlit as st
+
+# st.page_link("main.py", label="Home", icon="🏠")
+# st.page_link("pages/page_1.py", label="Page 1", icon="1️⃣")
+# st.page_link("pages/page_2.py", label="Page 2", icon="2️⃣", disabled=True)
+# st.page_link("http://www.google.com", label="Google", icon="🌎")
 
 with st.sidebar:
+
     # 초기화 버튼 새성
     button = st.button("대화내용 초기화")
     # 파일 업로드를 위한 위젯 생성
     uploaded_file = st.file_uploader("파일을 업로드 해주세요", type=["pdf"])
 
-    api_key = st.text_input("API KEY", type="password")
+    # api_key = st.text_input(
+    #     "API KEY",
+    #     type="password",
+    # )
+    api_key = st.secrets["OPENAI_API_KEY"]
 
     # 프롬프트를 선택할 수 있는 옵션을 주겠다!
     # option = st.selectbox(
