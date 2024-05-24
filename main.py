@@ -64,7 +64,7 @@ with st.sidebar:
     # )
 
     system_prompt = st.text_area(
-        "시스템 프롬프트",
+        "나는야 소원봇 🚀 ",
         "당신은 친절하게 답변하는 Assistant입니다. 간결하게 답변해 주세요.",
     )
     option = f"{system_prompt}" + "\n\n#Question: {question}"
