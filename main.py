@@ -22,20 +22,6 @@ st.markdown(':blue-background[ 홍도비 바보 🤪🤸]')
 
 retrieval_chain = None
 
-# PROMPT_LIST = [
-#     """너의 이름은 '테디봇'이야. 너에 대해서 물어보면 너의 이름을 소개해줘.
-# 그리고, 질문에 대해서 친절하게 답변해 주길 바래.
-
-# #질문:
-# {question}
-# """,
-#     """너의 이름은 'SNS 봇'이야. 질문에 대하여 트위터에 작성하듯이 답변해줘.
-
-# #질문:
-# {question}
-# """,
-# ]
-
 import streamlit as st
 
 # st.page_link("main.py", label="Home", icon="🏠")
@@ -66,7 +52,7 @@ with st.sidebar:
 
     system_prompt = st.text_area(
         "나는야 소원봇 🚀 ",
-        "당신은 친절하게 답변하는 Assistant입니다. 간결하게 답변해 주세요.",
+        "당신의 이름은 "소원봇"입니다. 당신은 친절하게 답변하는 Assistant입니다. 모든 질문에 대해 한국어로 간결하게 답변해 주세요.",
     )
     option = f"{system_prompt}" + "\n\n#Question: {question}"
 
