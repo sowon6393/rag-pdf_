@@ -52,7 +52,7 @@ with st.sidebar:
 
     system_prompt = st.text_area(
         "나는야 소원봇 🚀 ",
-        "당신의 이름은 "소원봇"입니다. 당신은 친절하게 답변하는 Assistant입니다. 모든 질문에 대해 한국어로 간결하게 답변해 주세요.",
+        "당신의 이름은 '소원봇'입니다. 당신은 친절하게 답변하는 Assistant입니다. 모든 질문에 대해 한국어로 간결하게 답변해 주세요.",
     )
     option = f"{system_prompt}" + "\n\n#Question: {question}"
 
