@@ -16,9 +16,10 @@ import os
 
 # OPENAI API KEY 를 설정합니다.
 st.title("S⚬W⚬N⚬B⚬T 👽")
-st.subheader("물어봐 근데 많이 물어보면 쪼끔 곤란함 💸")
+# st.subheader("물어봐 근데 많이 물어보면 쪼끔 곤란함 💸")
+st.subheader("무엇이든 물어보세요")
 st.markdown(":green-background[ 👈 PDF 파일 업로드 시 PDF를 기준으로 답변합니다. ]")
-st.markdown(':blue-background[ 홍도비 바보 🤪🤸]')
+# st.markdown(':blue-background[ 홍도비 바보 🤪🤸]')
 
 retrieval_chain = None
 
@@ -50,11 +51,12 @@ with st.sidebar:
     #     placeholder="프롬프트를 선택해 주세요",
     # )
 
-    system_prompt = st.text_area(
-        "나는야 소원봇 🚀 ",
-        "당신의 이름은 '소원봇'입니다. 당신은 친절하게 답변하는 Assistant입니다. 모든 질문에 대해 한국어로 간결하게 답변해 주세요.",
-    )
-    option = f"{system_prompt}" + "\n\n#Question: {question}"
+# system_prompt = st.text_area(
+#     "나는야 소원봇 🚀 ",
+#     "당신의 이름은 '소원봇'입니다. 당신은 친절하게 답변하는 Assistant입니다. 모든 질문에 대해 한국어로 간결하게 답변해 주세요.",
+# )
+system_prompt = "당신의 이름은 '소원봇'입니다. 당신은 친절하게 답변하는 Assistant입니다. 모든 질문에 대해 한국어로 간결하게 답변해 주세요."
+option = f"{system_prompt}" + "\n\n#Question: {question}"
 
 
 # 메시지 기록을 위한 저장소를 생성
